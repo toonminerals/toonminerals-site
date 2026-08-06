@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toon Minerals, LLC</title>
+<meta name="description" content="Toon Minerals, LLC">
+<style>
+  :root {
+    --bg: #12100e;
+    --bg-alt: #1a1714;
+    --card: #201c18;
+    --text: #f2ede4;
+    --text-muted: #b8ac9c;
+    --accent: #ffffff;
+    --accent-light: #ffffff;
+    --border: #322c26;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Header */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(18, 16, 14, 0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+  }
+
+  .logo {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .logo span {
+    color: var(--accent-light);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+  }
+
+  .nav-links a:hover {
+    color: var(--accent-light);
+  }
+
+  /* Hero */
+  .hero {
+    padding: 110px 0 90px;
+    text-align: center;
+    background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.08), transparent 60%);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin-bottom: 18px;
+  }
+
+  .hero .tagline {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 620px;
+    margin: 0 auto 36px;
+    min-height: 1.6em;
+  }
+
+  .tagline.placeholder {
+    font-style: italic;
+    opacity: 0.55;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    padding: 12px 18px;
+    display: inline-block;
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #1a1310;
+    font-weight: 600;
+    padding: 13px 30px;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .btn:hover {
+    background: #e6e6e6;
+    transform: translateY(-1px);
+  }
+
+  /* Divider */
+  .divider {
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* About */
+  .about {
+    padding: 80px 0;
+  }
+
+  .about h2, .contact h2 {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .about p {
+    max-width: 640px;
+    margin: 0 auto;
+    color: var(--text-muted);
+    text-align: center;
+    font-size: 1.05rem;
+  }
+
+  .about p.placeholder {
+    font-style: italic;
+    opacity: 0.55;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    padding: 14px 20px;
+  }
+
+  /* Contact */
+  .contact {
+    background: var(--bg-alt);
+    padding: 80px 0;
+  }
+
+  .contact-card {
+    max-width: 480px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 36px;
+    text-align: center;
+  }
+
+  .contact-item {
+    margin: 14px 0;
+    font-size: 1.05rem;
+  }
+
+  .contact-item .label {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+
+  .contact-item a {
+    color: var(--accent-light);
+  }
+
+  .contact-item a:hover {
+    text-decoration: underline;
+  }
+
+  /* Footer */
+  footer {
+    padding: 32px 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 2.1rem; }
+    .hero { padding: 80px 0 60px; }
+    .nav-links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <div class="logo">TOON <span>MINERALS</span></div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Toon Minerals, LLC</h1>
+      <p class="tagline">Oil and Gas Investments</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Toon Minerals, LLC is a family owned mineral purchasing and management company based in Austin, Texas. We work with our owners and other mineral buying partnerships to invest in all types of oil and gas assets across the US. We can undertake title work on a case-by-case basis for a fixed negotiated fee.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <div class="contact-item">
+          <span class="label">Email</span>
+          <a href="mailto:toonminerals@gmail.com">toonminerals@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">Phone</span>
+          <a href="tel:+15123185219">512-318-5219</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Toon Minerals, LLC. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
