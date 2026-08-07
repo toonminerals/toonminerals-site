@@ -69,24 +69,13 @@
   }
 
   .hero-logo {
-    height: 130px;
+    height: 220px;
     width: auto;
     margin: 0 auto 22px;
     display: block;
   }
 
-  .logo span {
-    color: var(--accent-light);
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 28px;
-    font-size: 0.95rem;
-    color: var(--text-muted);
-  }
-
-  .nav-links a:hover {
+  .logo .accent {
     color: var(--accent-light);
   }
 
@@ -94,7 +83,7 @@
   .hero {
     padding: 110px 0 90px;
     text-align: center;
-    background: radial-gradient(ellipse at top, rgba(26, 23, 20, 0.06), transparent 60%);
+    background: var(--bg-alt);
   }
 
   .hero h1 {
@@ -203,7 +192,6 @@
   @media (max-width: 600px) {
     .hero h1 { font-size: 2.1rem; }
     .hero { padding: 80px 0 60px; }
-    .nav-links { display: none; }
   }
 </style>
 </head>
@@ -213,12 +201,8 @@
     <div class="container nav">
       <div class="logo">
         <img src="toon-minerals-logo.png" alt="Toon Minerals logo">
-        TOON <span>MINERALS</span>
+        <span>TOON <span class="accent">MINERALS</span></span>
       </div>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </div>
   </header>
 
